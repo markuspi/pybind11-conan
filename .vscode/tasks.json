@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Conan install",
+            "type": "shell",
+            "command": "conan install ..",
+            "options": {
+                "cwd": "${command:cmake.buildDirectory}"
+            },
+            "problemMatcher": [],
+        },
+        {
+            "label": "Configure CMake",
+            "type": "shell",
+            "command": "${command:cmake.configure}",
+            "problemMatcher": []
+        },
+        {
+            "label": "Configure with conan",
+            "dependsOn": [
+                "Conan install",
+                "Configure CMake"
+            ],
+            "dependsOrder": "sequence",
+            "problemMatcher": []
+        }
+    ]
+}
