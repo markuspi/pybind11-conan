@@ -5,6 +5,7 @@ A template for quickly getting started with [PyBind11](https://github.com/pybind
 ## Prerequisite
 
 * Conan must be installed for the current user
+* CMake Tools Extension for Visual Studio Code
 
 ## Usage
 
@@ -14,6 +15,7 @@ A template for quickly getting started with [PyBind11](https://github.com/pybind
 * Execute `Tasks: Run Task`
 * Select `Configure with conan`
 * Ignore the error message "Cannot substitute command variable..."
+* Build Project using `F7`
 
 ### Manual Setup
 
